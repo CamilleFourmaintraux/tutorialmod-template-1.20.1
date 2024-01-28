@@ -5,7 +5,6 @@ import net.grotacam.tutorialmod.TutorialMod;
 import net.grotacam.tutorialmod.block.ModBlocks;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
@@ -22,7 +21,17 @@ public class ModItemGroups {
                         entries.add(ModBlocks.RUBY_BLOCK);
                         entries.add(ModBlocks.RAW_RUBY_BLOCK);
 
-                        entries.add(Items.DIAMOND);
+                        entries.add(ModBlocks.RUBY_ORE);
+                        entries.add(ModBlocks.DEEPSLATE_RUBY_ORE);
+                        entries.add(ModBlocks.NETHER_RUBY_ORE);
+                        entries.add(ModBlocks.END_STONE_RUBY_ORE);
+
+                        entries.add(ModItems.METAL_DETECTOR);
+
+                        entries.add(ModBlocks.SOUND_BLOCK);
+
+                        entries.add(ModItems.TOMATO);
+
 
                     }).build());
 
