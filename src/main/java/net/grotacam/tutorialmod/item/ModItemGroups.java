@@ -32,6 +32,8 @@ public class ModItemGroups {
 
                         entries.add(ModItems.TOMATO);
 
+                        entries.add(ModItems.COAL_BRIQUETTE);
+
 
                     }).build());
 
