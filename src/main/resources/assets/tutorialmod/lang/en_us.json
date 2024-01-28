@@ -4,6 +4,9 @@
 
   "item.tutorialmod.metal_detector" : "Metal detector",
 
+  "tooltip.tutorialmod.metal_detector.tooltip":"Finds valuable underground",
+
+
   "item.tutorialmod.tomato" : "Tomato",
 
 
