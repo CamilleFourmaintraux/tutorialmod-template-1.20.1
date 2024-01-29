@@ -29,6 +29,16 @@ public class ModItems {
     public static final Item RUBY_HOE = registerItem("ruby_hoe",new HoeItem(ModToolMaterial.RUBY, 2, 6f, new FabricItemSettings()));
 
 
+    public static final Item RUBY_HELMET = registerItem("ruby_helmet",
+            new ArmorItem(ModArmorMaterial.RUBY, ArmorItem.Type.HELMET, new FabricItemSettings()));
+    public static final Item RUBY_CHESTPLATE = registerItem("ruby_chestplate",
+            new ArmorItem(ModArmorMaterial.RUBY, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
+    public static final Item RUBY_LEGGINGS = registerItem("ruby_leggings",
+            new ArmorItem(ModArmorMaterial.RUBY, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
+    public static final Item RUBY_BOOTS = registerItem("ruby_boots",
+            new ArmorItem(ModArmorMaterial.RUBY, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+
+
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries){
         entries.add(RUBY);
         entries.add(RAW_RUBY);
