@@ -6,8 +6,10 @@ import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.grotacam.tutorialmod.block.ModBlocks;
 import net.grotacam.tutorialmod.item.ModItemGroups;
 import net.grotacam.tutorialmod.item.ModItems;
+import net.grotacam.tutorialmod.sound.ModSounds;
 import net.grotacam.tutorialmod.utils.ModCustomTrades;
 import net.grotacam.tutorialmod.utils.ModLootTableModifiers;
+import net.grotacam.tutorialmod.villager.ModVillagers;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -21,11 +23,16 @@ public class TutorialMod implements ModInitializer {
 		LOGGER.info("Initializing tutorialmod!");
 
 		ModItemGroups.registerItemGroups();
+
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
-		ModCustomTrades.registerCustomTrades();
 
 		ModLootTableModifiers.modifyLootTables();
+		ModCustomTrades.registerCustomTrades();
+
+		ModVillagers.registerVillagers();
+
+		ModSounds.registerSounds();
 
 		FuelRegistry.INSTANCE.add(ModItems.COAL_BRIQUETTE, 200);
 	}

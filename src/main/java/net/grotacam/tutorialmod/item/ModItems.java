@@ -7,6 +7,7 @@ import net.grotacam.tutorialmod.TutorialMod;
 import net.grotacam.tutorialmod.block.ModBlocks;
 import net.grotacam.tutorialmod.item.custom.MetalDetectorItem;
 import net.grotacam.tutorialmod.item.custom.ModArmorItem;
+import net.grotacam.tutorialmod.sound.ModSounds;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -48,6 +49,10 @@ public class ModItems {
             new ArmorItem(ModArmorMaterial.RUBY, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
     public static final Item RUBY_BOOTS = registerItem("ruby_boots",
             new ArmorItem(ModArmorMaterial.RUBY, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+
+    public static final Item BAR_BRAWL_MUSIC_DISC = registerItem("bar_brawl_music_disc",
+            new MusicDiscItem(7, ModSounds.BAR_BRAWL, new FabricItemSettings().maxCount(1), 122));
+
 
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries){

@@ -1,7 +1,9 @@
 package net.grotacam.tutorialmod.utils;
 
 import net.fabricmc.fabric.api.object.builder.v1.trade.TradeOfferHelper;
+import net.grotacam.tutorialmod.block.ModBlocks;
 import net.grotacam.tutorialmod.item.ModItems;
+import net.grotacam.tutorialmod.villager.ModVillagers;
 import net.minecraft.enchantment.EnchantmentLevelEntry;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.item.EnchantedBookItem;
@@ -53,5 +55,22 @@ public class ModCustomTrades {
                             1,12,0.075f)
                     );
             });
+
+        TradeOfferHelper.registerVillagerOffers(ModVillagers.SOUND_MASTER,1,
+                factories -> {
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(ModItems.RUBY,9),
+                            new ItemStack(ModBlocks.SOUND_BLOCK,2),
+                            2, 12, 0.075f)
+                    );
+                });
+        TradeOfferHelper.registerVillagerOffers(ModVillagers.SOUND_MASTER,2,
+                factories -> {
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(ModItems.COAL_BRIQUETTE,5),
+                            new ItemStack(ModBlocks.DAHLIA,2),
+                            5, 2, 0.025f)
+                    );
+                });
     }
 }

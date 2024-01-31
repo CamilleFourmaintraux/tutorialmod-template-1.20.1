@@ -60,6 +60,7 @@ public class ModItemGroups {
                         entries.add(ModItems.RUBY_LEGGINGS);
                         entries.add(ModItems.RUBY_BOOTS);
 
+                        entries.add(ModItems.BAR_BRAWL_MUSIC_DISC);
 
                     }).build());
 

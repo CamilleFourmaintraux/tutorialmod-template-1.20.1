@@ -6,8 +6,8 @@ import net.grotacam.tutorialmod.TutorialMod;
 import net.grotacam.tutorialmod.block.custom.CornCropBlock;
 import net.grotacam.tutorialmod.block.custom.SoundBlock;
 import net.grotacam.tutorialmod.block.custom.TomatoCropBlock;
+import net.grotacam.tutorialmod.sound.ModSounds;
 import net.minecraft.block.*;
-import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -36,7 +36,7 @@ public class ModBlocks {
 
 
     public static final Block SOUND_BLOCK = registerBlock("sound_block",
-            new SoundBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
+            new SoundBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).sounds(ModSounds.SOUND_BLOCK_SOUNDS)));
 
 
 
