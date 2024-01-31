@@ -22,6 +22,7 @@
 
 
   "item.tutorialmod.tomato" : "Tomato",
+  "item.tutorialmod.tomato_seeds" : "Tomato Seeds",
   "item.tutorialmod.coal_briquette" : "Coal Briquette",
 
   "block.tutorialmod.ruby_block": "Block of Ruby",
